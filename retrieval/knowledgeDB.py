@@ -1,6 +1,9 @@
 from abc import ABC, abstractmethod
 import os
-os.environ["OPENAI_API_KEY"] = ""
+
+from RAG.configuration.ConfigParser import ConfigParser
+
+os.environ["OPENAI_API_KEY"] = ConfigParser.get_key_value('open_ai')
 
 class KnowledgeDB:
 

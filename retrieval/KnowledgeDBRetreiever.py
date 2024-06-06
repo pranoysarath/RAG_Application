@@ -6,7 +6,6 @@ from RAG.retrieval.DocArrayDB import DocArrayDB
 class KnowledgeDBRetriever:
 
     DB_MAPPINGS = {
-
         'in_memory_docarray' : DocArrayDB
     }
     #

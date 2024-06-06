@@ -1,8 +1,8 @@
 import os
 from langchain_openai import ChatOpenAI
+from RAG.configuration.ConfigParser import ConfigParser
 
-
-os.environ["OPENAI_API_KEY"] = ""
+os.environ["OPENAI_API_KEY"] = ConfigParser.get_key_value('open_ai')
 
 class LLMModel:
 

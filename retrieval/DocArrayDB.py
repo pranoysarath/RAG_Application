@@ -27,7 +27,9 @@ class DocArrayDB(KnowledgeDB):
 
 # db = DocArrayDB()
 # db.add_documents(['Prnaoy Sarath'])
-# print(db.get_documents('sarath'))
+# docs = db.get_documents('sarath')
+# for doc in docs:
+#     print(doc.page_content)
 
 
 
