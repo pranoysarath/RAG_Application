@@ -3,7 +3,7 @@ from langchain_core.runnables import RunnableParallel, RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 
 
-class MovieQA:
+class ShowQA:
 
     def __init__(self, llm, retriever):
 

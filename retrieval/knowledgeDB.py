@@ -5,7 +5,7 @@ from RAG.configuration.ConfigParser import ConfigParser
 
 os.environ["OPENAI_API_KEY"] = ConfigParser.get_key_value('open_ai')
 
-class KnowledgeDB:
+class KnowledgeDB(ABC):
 
     def __init__(self, db):
         self.db = db
