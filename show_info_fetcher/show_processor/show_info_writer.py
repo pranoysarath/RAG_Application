@@ -9,8 +9,8 @@ class ShowInfoWriter:
 
     def __init__(self):
         directory = os.path.dirname(__file__)
-        self.target_folder = os.path.join(directory,'data_files', 'to_be_processed')
-        self.source_folder = os.path.join(directory,'data_files', 'show_mappings.json')
+        self.target_folder = os.path.join(directory, '../data_files', 'to_be_processed', 'shows')
+        self.source_folder = os.path.join(directory, '../data_files', 'to_be_processed', 'show_mappings.json')
         self.show_info_to_retrieve = self.get_show_ids(self.source_folder)
 
 
@@ -30,7 +30,7 @@ class ShowInfoWriter:
 
 
 
-ShowInfoWriter().get_new_show_info()
+# ShowInfoWriter().get_new_show_info()
 
 
 

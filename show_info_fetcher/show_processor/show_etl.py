@@ -11,7 +11,7 @@ class ShowETL:
 
     def __init__(self):
         self.directory = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        self.files_directory = os.path.join(self.directory, "data_files", "to_be_processed")
+        self.files_directory = os.path.join(self.directory, "data_files", "to_be_processed", 'shows')
 
         # make it configurable
         self.retriever_base_url = "http://127.0.0.1:5000"
@@ -61,5 +61,3 @@ class ShowETL:
             print(f"Exception occured while sending documents to the retriever {e}")
             print(traceback.format_exc())
 
-
-ShowETL().process_data()
